@@ -1,0 +1,177 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f7fa;
+    padding: 40px;
+    margin: 0;
+}
+
+.loan-calculator {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 200px;
+    background: #fff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    max-width: 1000px;
+    margin: auto;
+}
+
+.calculator-form,
+.result-box {
+    flex: 1;
+    min-width: 350px;
+}
+
+    .calculator-form h2 {
+        margin-bottom: 50px;
+        color: #003366;
+    }
+
+    .calculator-form label {
+        display: block;
+        margin: 50px 0 5px;
+        font-weight: 600;
+    }
+
+input[type=range] {
+    width: 100%;
+}
+
+#amount-display,
+#term-display {
+    display: block;
+    margin-top: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+select,
+input[type=range] {
+    width: 100%;
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+button {
+    margin-top: 20px;
+    background: #ffc107;
+    color: #003366;
+    padding: 10px 20px;
+    border: none;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+    button:hover {
+        background: #e0a800;
+    }
+
+.result-box {
+    background: #f9f9f9;
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+    .result-box h3 {
+        color: #003366;
+        margin-bottom: 15px;
+    }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base styles */
+html, body {
+    height: 100%; /* Ensure the body and html take up full height */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #f5f7fa;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure body is at least as tall as the viewport */
+    overflow-y: auto;
+}
+
+/* Content Area */
+.main-content {
+    flex-grow: 1; /* Allows the content to take up remaining space */
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: -35px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo {
+    display: flex;
+    align-items: center; /* Ensure vertical alignment */
+}
+
+    .logo img {
+        height: 120px; /* Set the logo height to 120px */
+        width: auto;
+        transition: height 0.3s ease; /* Smooth transition when resizing the logo */
+    }
+/* Header */
+header {
+    background-color: #003366;
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 15px 0;
+    transition: top 0.3s;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-weight: 600;
+    }
+
+.search-fb {
+    display: flex;
+    align-items: center;
+    gap: 0px;
+}
+
+    .search-fb input {
+        padding: 5px 10px;
+        border: none;
+        border-radius: 5px;
+    }
+
+    .search-fb img {
+        width: 54px;
+        height: 50px;
+    }
